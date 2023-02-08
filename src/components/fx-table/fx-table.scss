@@ -1,0 +1,21 @@
+@import "src/constants";
+
+.fx-table {
+  .MuiSwitch-root {
+    &.MuiSwitch-sizeMedium {
+      .Mui-checked {
+        .MuiSwitch-thumb {
+          color: $yellow;
+        }
+        .MuiTouchRipple-roo {
+          color: $yellow;
+        }
+      }
+      .Mui-checked+ {
+        .MuiSwitch-track {
+          background-color: $yellow2;
+        }
+      }
+    }
+  }
+}

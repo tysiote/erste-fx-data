@@ -1,0 +1,28 @@
+@import 'src/constants';
+
+.currency-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 15px 0;
+  padding: 2px;
+  width: calc(100% - 4px);
+  font-size: 22px;
+  border: 1px solid #333;
+  background-color: $white1;
+  box-sizing: border-box;
+
+  &.incomplete {
+    background-color: $light;
+  }
+
+  .currency-label-wrapper {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 10px;
+      max-height: 30px;
+    }
+  }
+}

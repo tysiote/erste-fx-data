@@ -1,0 +1,38 @@
+@import 'src/constants';
+
+$main-page-padding: 20px;
+$main-page-bg-color: $white2;
+
+body {
+  margin: 0;
+}
+
+.main-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $main-page-bg-color;
+
+  .header {
+    width: 100%;
+    background-color: $black1;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $theme-color;
+    font-size: 30px;
+  }
+
+  .search-bar-wrapper {
+    width: 100%;
+    position: sticky;
+    top: 0;
+  }
+
+  .main-page-content {
+    padding: $main-page-padding;
+    background-color: $main-page-bg-color;
+    box-sizing: border-box;
+    font-size: 60px;
+  }
+}

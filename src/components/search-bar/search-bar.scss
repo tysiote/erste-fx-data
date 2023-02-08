@@ -1,0 +1,30 @@
+@import 'src/constants';
+
+$input-margin: 20px;
+
+.search-bar {
+  background-color: $gray1;
+  color: $white1;
+  width: 100%;
+  z-index: 1;
+
+  .input-wrapper {
+    margin-left: $input-margin;
+  }
+
+  input, label {
+    color: $white1;
+  }
+
+  label {
+    &.Mui-focused {
+      color: $white1;
+    }
+  }
+
+  .MuiInputBase-root {
+    &::after {
+      border-bottom-color: $theme-color;
+    }
+  }
+}
